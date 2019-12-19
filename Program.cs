@@ -59,7 +59,9 @@ namespace SplittingTuples
         
     static void Main()
         {
-            var (Name, Salary, Gender, Dept) = GetEmployeeDetails(1001);
+            // var (Name, Salary, Gender, Dept) = GetEmployeeDetails(1001);
+            (var Name, var Salary, string Gender, var Dept) = GetEmployeeDetails(1001);// not recommended.
+
             // Do something with the data.
             //here we are just printing the data in the console
             Console.WriteLine("Employee Details :");
